@@ -2,9 +2,17 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.jsx'
+import { BrowserRouter } from 'react-router'
+import AppContextProvider from './ContextProvider.jsx'
+import { Toaster } from 'react-hot-toast'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App />
+    <BrowserRouter>
+      <AppContextProvider>
+        <App />
+        <Toaster/>
+      </AppContextProvider>
+    </BrowserRouter>
   </StrictMode>,
 )

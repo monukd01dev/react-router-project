@@ -1,0 +1,8 @@
+1. react router install kiya
+2. ab router setup kar rahe hai apne app me jaise ke maine paihle "Data" wala kiya hua hai is baar mai "Declarative" wala router use kar raha hune 
+3. kaise karna hai vo dekh 
+    a. kuch nhi karna hota hai setup ke liye hume apne main.jsx/index.jsx/script.jsx vo jsx jaha root ho usme app ke jagha vahi <BrowserRouter/>
+        <App/>
+    <BrowserRouter/>
+
+    b. ye karna hota hai 

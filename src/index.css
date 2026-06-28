@@ -1,1 +1,17 @@
 @import "tailwindcss";
+/* Chrome/Safari ke liye autofill style override */
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus {
+  -webkit-text-fill-color: white; /* Text ka color wapas white set karega */
+  -webkit-box-shadow: 0 0 0px 1000px #161d27 inset; /* Ye trick hai: 1000px ka shadow daal do taaki background cover ho jaye */
+  transition: background-color 5000s ease-in-out 0s; /* Autofill ko animate hone se rokne ke liye */
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
